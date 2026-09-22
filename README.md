@@ -1,5 +1,4 @@
 # EXPERIMENT-04-INTERRUPT-GENERATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
-
 ###  NAME: RAJA RITHIKA 
 ###  ROLL NO : 2305001029
 ###  DEPARTMENT: CSE
@@ -8,7 +7,6 @@ To Interface a IR Sensor to digital port of iot development board  and generate 
 
 ### Components required:
 STM32 CUBE IDE,  serial port utility monitor,IR Pair Sensor .
-
 
 ## Theory :
 
@@ -35,8 +33,6 @@ Connect GND pin to evive’s GND pin.
 Connect OUT to any gpio and configure that pin as EXTI mode 
 
 ### Interrupts
-
-
 Interrupts are asynchronous (i.e. can happen anytime) events that disrupt the normal flow of your program. This allows the microcontroller to focus on a key task and attend to these events (e.g. pressing a button) as they come without needing to wait for them.
 
 With interrupt, we do not need to continuously check the state of the digital input pin. When an interrupt occurs (a change is detected), the processor stops the execution of the main program and a function is called upon known as ISR or the Interrupt Service Routine. The processor then temporarily works on a different task (ISR) and then gets back to the main program after the handling routine has ended.
@@ -121,7 +117,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 16. click on the run to observe the values 
  
-
 ## STM 32 CUBE PROGRAM :
 ```
 #include "main.h"
@@ -271,8 +266,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## Output screen shots of serial port utility   :
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/98568661-f338-468f-b0c9-4a8953dbbff9" />
 
- 
- ## Circuit board :
+## Circuit board :
  ## Without interrupt:
  <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/988cca60-d6cb-4197-aa99-2e6e84a7084b" />
 
