@@ -4,12 +4,9 @@
 ###  DEPARTMENT: CSE
 ### Aim:
 To Interface a IR Sensor to digital port of iot development board  and generate an interrupt and visualize on the serial monitor 
-
 ### Components required:
 STM32 CUBE IDE,  serial port utility monitor,IR Pair Sensor .
-
 ## Theory :
-
 An infrared (IR) sensor a proximity sensor, or a ‘nearness’ sensor senses whether there is an object near it or not. The IR stands for Infrared sensor. Infrared is the light out of our visible spectrum.
 
 Working of an IR Sensor
@@ -31,7 +28,6 @@ Now that we have a little idea about its works, let’s take a look at how to in
 Connect VCC pin to the +5V pin on evive.
 Connect GND pin to evive’s GND pin.
 Connect OUT to any gpio and configure that pin as EXTI mode 
-
 ### Interrupts
 Interrupts are asynchronous (i.e. can happen anytime) events that disrupt the normal flow of your program. This allows the microcontroller to focus on a key task and attend to these events (e.g. pressing a button) as they come without needing to wait for them.
 
@@ -50,7 +46,6 @@ The STM32 ARM microcontroller features 23 event sources which are divided into t
 
 
 The diagram below shows how the GPIO pins are connected to the 16 interrupt lines:
-
 ## Procedure:
 
  1. click on STM 32 CUBE IDE, the following screen will appear
@@ -116,7 +111,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 ![image](https://github.com/user-attachments/assets/72d35bbb-5261-4986-a24f-cfa2c00e26d6)
 
 16. click on the run to observe the values 
- 
 ## STM 32 CUBE PROGRAM :
 ```
 #include "main.h"
@@ -262,14 +256,13 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 ```
-
 ## Output screen shots of serial port utility   :
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/98568661-f338-468f-b0c9-4a8953dbbff9" />
 
 ## Circuit board :
  ## Without interrupt:
  <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/988cca60-d6cb-4197-aa99-2e6e84a7084b" />
-
+ 
 ## With interrupt:
  <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/24c9d2f4-8995-4a3c-a3cd-d682222230f2" />
  
